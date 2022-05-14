@@ -1,0 +1,8 @@
+apiVersion: info.gov.io/v1
+kind: User
+metadata:
+  name: user-sample-v1
+spec:
+  name: "Daniel"
+  age: 26
+  passport_number: "Z5588929"

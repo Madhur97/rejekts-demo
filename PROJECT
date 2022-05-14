@@ -1,0 +1,27 @@
+domain: gov.io
+layout:
+- go.kubebuilder.io/v3
+projectName: rejekts-demo
+repo: rejekts-demo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: gov.io
+  group: info
+  kind: User
+  path: rejekts-demo/api/v1
+  version: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: gov.io
+  group: info
+  kind: User
+  path: rejekts-demo/api/v2
+  version: v2
+  webhooks:
+    conversion: true
+    webhookVersion: v1
+version: "3"
